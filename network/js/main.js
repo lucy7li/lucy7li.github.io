@@ -82,10 +82,6 @@ function initSigma(config) {
     	};
 	
     var a = sigma.init(document.getElementById("sigma-canvas")).drawingProperties(drawProps).graphProperties(graphProps).mouseProperties(mouseProps);
-    a.addRenderer({
-        type: 'canvas',
-        container: 'container'
-    });
     sigInst = a;
     a.active = !1;
     a.neighbors = {};

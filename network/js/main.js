@@ -51,16 +51,16 @@ function initSigma(config) {
 		drawProps=config.sigma.drawingProperties;
 	else
 		drawProps={
-        defaultLabelColor: "#000",
-        defaultLabelSize: 14,
-        defaultLabelBGColor: "#ddd",
-        defaultHoverLabelBGColor: "#002147",
-        defaultLabelHoverColor: "#fff",
-        labelThreshold: 10,
-        defaultEdgeType: "curve",
-        hoverFontStyle: "bold",
-        fontStyle: "bold",
-        activeFontStyle: "bold"
+			defaultLabelColor: "#000",
+			defaultLabelSize: 14,
+			defaultLabelBGColor: "#ddd",
+			defaultHoverLabelBGColor: "#002147",
+			defaultLabelHoverColor: "#000",
+			labelThreshold: 10,
+			defaultEdgeType: "curve",
+			hoverFontStyle: "bold",
+			fontStyle: "bold",
+			activeFontStyle: "bold"
     };
     
     if (config.sigma && config.sigma.graphProperties)	
@@ -82,6 +82,10 @@ function initSigma(config) {
     	};
 	
     var a = sigma.init(document.getElementById("sigma-canvas")).drawingProperties(drawProps).graphProperties(graphProps).mouseProperties(mouseProps);
+    s.addRenderer({
+        type: 'canvas',
+        container: 'container'
+    });
     sigInst = a;
     a.active = !1;
     a.neighbors = {};

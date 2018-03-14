@@ -58,7 +58,7 @@
     // {string} The ratio between the font size of the label and the node size.
     labelSizeRatio: 1,
     // {number} The minimum size a node must have to see its label displayed.
-    labelThreshold: 8,
+    labelThreshold: 0,
     // {number} The oversampling factor used in WebGL renderer.
     webglOversamplingRatio: 2,
     // {number} The size of the border of hovered nodes.
@@ -108,7 +108,7 @@
     drawEdges: true,
     drawNodes: true,
     drawLabels: true,
-    drawEdgeLabels: false,
+    drawEdgeLabels: true,
     // {boolean} Indicates if the edges must be drawn in several frames or in
     //           one frame, as the nodes and labels are drawn.
     batchEdgesDrawing: false,
@@ -211,7 +211,7 @@
     // {boolean} If set to false, the nodes cannot be hovered.
     enableHovering: true,
     // {boolean} If set to true, the edges can be hovered.
-    enableEdgeHovering: false,
+    enableEdgeHovering: true,
     // {number} The size of the area around the edges to activate hovering.
     edgeHoverPrecision: 5,
     // {boolean} If set to true, the rescale middleware will ignore node sizes

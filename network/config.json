@@ -8,13 +8,13 @@
     "text": "Lucy Li"
   },
   "text": {
-    "more": "Current professors in cryptography and institutions they studied at. ",
-    "intro": "Current professors in cryptography and institutions they studied at. ",
+    "more": "Current cryptography professors and institutions. ",
+    "intro": "Current cryptography professors and institutions. ",
     "title": "crypto prof network"
   },
   "legend": {
     "edgeLabel": "phd/postdoc links",
-    "colorLabel": "groupings",
+    "colorLabel": "",
     "nodeLabel": "people/institutions"
   },
   "features": {
@@ -28,12 +28,12 @@
   },
   "sigma": {
     "drawingProperties": {
-      "defaultEdgeType": "curve",
+      "defaultEdgeType": "straight",
       "defaultHoverLabelBGColor": "#002147",
       "defaultLabelBGColor": "#ddd",
       "activeFontStyle": "bold",
       "defaultLabelColor": "#000",
-      "labelThreshold": 10,
+      "labelThreshold": 0,
       "defaultLabelHoverColor": "#fff",
       "fontStyle": "bold",
       "hoverFontStyle": "bold",
